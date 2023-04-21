@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #55c47e;
+    --text-color: #333;
+    --product-price-color: #f67034;
+    --white-color: #fff;
+
+    --product-card-gap: 30px;
+    --product-card-width: 220px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: transparent;
+    outline-offset: unset;
+}
+
+.form-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.form-title h4 {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.form-label {
+    margin-bottom: 0.25rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.alert {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    padding: 8px;
+    margin-bottom: 1rem;
+}
+
+a.primary-link {
+    color: var(--primary-color);
+}
+
+a.primary-link:hover {
+    text-decoration: underline;
+}
