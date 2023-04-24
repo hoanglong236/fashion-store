@@ -83,7 +83,28 @@ class ProductService
 
     public function findProductBySlug($productSlug)
     {
-        return Product::where(['delete_flag' => false, 'slug' => $productSlug])->first();
+        return DB::table('products')
+            ->join('categories', 'categories.id', '=', 'products.category_id')
+            ->join('brands', 'brands.id', '=', 'products.brand_id')
+            ->select([
+                'products.id',
+                'products.name',
+                'products.slug',
+                'products.price',
+                'products.discount_percent',
+                'products.main_image_path',
+                'products.warranty_period',
+                'brands.id as brand_id',
+                'brands.name as brand_name',
+                'brands.slug as brand_slug',
+            ])
+            ->where([
+                'products.delete_flag' => false,
+                'categories.delete_flag' => false,
+                'brands.delete_flag' => false,
+                'products.slug' => $productSlug,
+            ])
+            ->first();
     }
 
     public function getProductImagesByProductId($productId)

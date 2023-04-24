@@ -26,7 +26,7 @@
 
         <!-- Start cellphone -->
         <div class="cellphone hidden-xs">
-            <p><span class="fa fa-phone"></span>00-62-658-658</p>
+            <p><span class="fa fa-phone"></span>00-00-000-000</p>
         </div>
     </div>
 

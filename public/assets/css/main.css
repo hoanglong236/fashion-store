@@ -739,3 +739,8 @@ span.cancel-status {
 #aa-support .aa-support-area .aa-support-single span {
     color: var(--primary-color);
 }
+
+#aa-product-category .aa-sidebar .aa-sidebar-widget h3 {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}

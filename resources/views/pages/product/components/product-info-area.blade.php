@@ -10,7 +10,7 @@
     </div>
     <div class="product-view-brand mt-4">
         <span>Brand: </span>
-        <a href="#">Oppo</a>
+        <a href="#">{{ $product->brand_name }}</a>
     </div>
     <div class="product-view-ability mb-2">
         Avilability: <span>In stock</span>

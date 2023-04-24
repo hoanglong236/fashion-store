@@ -15,7 +15,7 @@ class HomeService
     {
         return Product::where([
             'delete_flag' => false,
-        ])->inRandomOrder()->limit(Constants::TOP_PRODUCT_COUNT)->get();
+        ])->inRandomOrder()->limit(Constants::TOP_PRODUCT_COUNT / 2)->get();
     }
 
     // TODO: handle this
@@ -23,7 +23,7 @@ class HomeService
     {
         return Product::where([
             'delete_flag' => false,
-        ])->inRandomOrder()->limit(Constants::TOP_PRODUCT_COUNT)->get();
+        ])->inRandomOrder()->limit(Constants::TOP_PRODUCT_COUNT / 2)->get();
     }
 
     // TODO: handle this
@@ -31,7 +31,7 @@ class HomeService
     {
         return Product::where([
             'delete_flag' => false,
-        ])->orderBy('created_at')->limit(Constants::TOP_PRODUCT_COUNT)->get();
+        ])->orderBy('created_at')->limit(Constants::TOP_PRODUCT_COUNT / 2)->get();
     }
 
     public function getTopCategories()

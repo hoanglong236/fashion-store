@@ -7,7 +7,7 @@
         <div class="promotion-item my-2">
             <p>
                 <span class="circle-around-number">1</span>
-                Receive a voucher worth $50 for copyrighted software products such as Office, Antivirus,...
+                Receive a voucher worth $50 for accessories such as watches, wallets,...
             </p>
         </div>
         <div class="promotion-item">
