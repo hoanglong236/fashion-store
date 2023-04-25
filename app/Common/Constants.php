@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Log;
 class Constants
 {
     const TOP_BRAND_COUNT = 5;
-    const TOP_CATEGORY_COUNT = 4;
+    const TOP_CATEGORY_COUNT = 3;
     const TOP_PRODUCT_COUNT = 8;
 
     const ACTION_SUCCESS = 'success_message';

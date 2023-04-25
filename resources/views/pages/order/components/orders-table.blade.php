@@ -29,8 +29,8 @@
                     <a href="{{ route('order.details', $customOrder->id) }}"
                         class="btn btn-primary btn-sm mb-2">Details</a>
                     @if (
-                        $customOrder->status !== OrderStatusConstants::COMPLETED &&
-                            $customOrder->status !== OrderStatusConstants::CANCELLED)
+                        $customOrder->status === OrderStatusConstants::RECEIVED ||
+                            $customOrder->status === OrderStatusConstants::PROCESSING)
                         <form action="{{ route('order.cancel', $customOrder->id) }}"
                             onsubmit="return confirm('Are you sure you want to cancel your order?')" method="post">
                             @csrf
